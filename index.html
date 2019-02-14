@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Welcome NexSeed Okinawa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +21,10 @@
     </div>
     <!-- header右側 -->
     <ul class="header-right">
-      <li>新規登録</li>
+    <div id="ex1" class="modal">
+        <a href="a" rel="modal:close">close</a>
+    </div>
+        <p><a href="#ex1" rel="modal:open"><li>新規登録</li></a></p>
       <li>ログイン</li>
     </ul>
 
@@ -36,7 +41,9 @@
     </ul>
 
     <div class="btn-group">
-      <button class="btn register">新規登録</button>
+      <div id="ex1" class="modal">
+    </div>
+    <a href="#ex1" rel="modal:open"><button class="btn register">新規登録</button></a>
       <button class="btn login">ログイン</button>
     </div>
   </main>
@@ -45,28 +52,44 @@
   マージントップ50px
   h2 NexSeed life 36px
   ul .img-box サブタイトル(h2)とのマージンが50px
-  ulの小要素 li
+  ulの小要素
   1.liの小要素に画像(300×300pxのサイズ)
   2.liの小要素spanでタイトル(文字サイズ24px
   画像同士の間隔は60pxです。 -->
 
   <main class="curriculum">
     <h2 class="sub-title">NexSeed Life</h2>
-    <ul class="img-box">
-      <li>
-        <img src="img/programming.jpg" alt="">
-        <span>programing</span>
-      </li>
-      <li>
-        <img src="img/english.jpg" alt="">
-        <span>English</span>
-      </li>
-      <li>
-        <img src="img/enjoy.jpg" alt="">
-        <span>Enjoy</span>
-      </li>
-    </ul>
+    <div class="swiper-container">
+        <ul class="img-box swiper-wrapper">
+            <li class="swiper-slide"><img src="img/programming.jpg" alt="">
+              <span>programing</span>
+            </li>
+            <li class="swiper-slide"><img src="img/english.jpg" alt=""><span>English</span>
+            </li>
+            <li class="swiper-slide"><img src="img/enjoy.jpg" alt=""><span>Enjoy</span>
+            </li>
+        </ul>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
   </main>
+
+<!--   <main class="curriculum">
+    <h2 class="sub-title">NexSeed Life</h2>
+    <div class="swiper-container">
+        <ul class="img-box swiper-wrapper">
+            <div class="swiper-slide"><li><img src="img/programming.jpg" alt="">
+              <span>programing</span>
+            </li></div>
+            <div class="swiper-slide"><li><img src="img/english.jpg" alt=""><span>English</span>
+            </li></div>
+            <div class="swiper-slide"><li><img src="img/enjoy.jpg" alt=""><span>Enjoy</span>
+            </li></div>
+        </ul>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+  </main> -->
 
 <!-- asideタグ.contact
 aside小要素：h2.sub-title「contact us」
@@ -122,11 +145,11 @@ div.form小要素：div.form-left -->
 
 
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-
-
-
-
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<!-- モーダル用 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

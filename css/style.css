@@ -18,6 +18,7 @@ header{
   font-size: 18px;
   padding: 5px 0;
 /*height: 60px;*/
+z-index: 3;
 }
 
 .icon{
@@ -37,10 +38,17 @@ header{
 .header-right{
   display: flex;
   align-items: center;
-  margin-right: 80px; 
+  margin-right: 80px;
 }
 
 .header-right li:first-child{
+  margin-right: 20px;
+}
+
+.header-right a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
   margin-right: 20px;
 }
 
@@ -77,6 +85,9 @@ header{
 
 .btn-group {
   margin-top:60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn{
@@ -93,6 +104,7 @@ header{
 .btn:first-child{
   margin-left: 0px;
 }
+
 
 .register{
   background-color: rgba(29, 172, 224, .5);
@@ -125,18 +137,20 @@ header{
 .img-box {
   margin-top: 50px;
   display: flex;
-  justify-content: center;
+/*  justify-content: center;*/
+/*  width: 300px;
+  height: 300px;*/
 }
 
 .img-box li{
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-right: 60px;
+/*  margin-right: 60px;*/
 }
 
 .img-box li:last-child{
-  margin-right:0px;
+/*  margin-right:0px;*/
 }
 
 .img-box li img{
@@ -148,6 +162,14 @@ header{
   font-size: 24px;
   margin-top: 20px;
 }
+
+.swiper-container{
+    width: 960px;
+    height: 400px;
+  }
+
+
+
 
 /*contactここから*/
 .contact{
@@ -221,6 +243,8 @@ footer {
 footer .footer-right{
   margin-right: 80px;
 }
+
+
 
 
 
